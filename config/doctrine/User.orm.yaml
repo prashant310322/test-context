@@ -1,0 +1,6 @@
+# config/doctrine/User.orm.yml
+App\Entity\User:
+    type: entity
+    # ...
+    lifecycleCallbacks:
+        prePersist: ['setCreatedAtValue']
